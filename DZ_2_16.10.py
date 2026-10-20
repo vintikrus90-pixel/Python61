@@ -9,7 +9,8 @@ while True:
             print("Ошибка: количество дней должно быть от 1 до 7 Введите снова")
     except ValueError:
         print("Ошибка: введите число Введите снова")
-total_hours = 0
+
+daylight_hours = 0
 
 # 2 Ввод часов для каждого дня
 for day in range(1, num_days + 1):
@@ -18,12 +19,12 @@ for day in range(1, num_days + 1):
             hours_input = input(f"Сколько часов учились в день {day} : ")
             hours = float(hours_input)
             if hours > 0:
-                total_hours += hours
+                daylight_hours += hours
                 break
             else:
                 print("ошибка: количество часов должно быть числом Введите снова")
         except ValueError:
             print("Ошибка: введите число Введите снова")
 # 3 Вывод результата
-print(f"Учет завершен Дней - {num_days}, общее время - {total_hours}")
+print(f"Учет завершен Дней - {num_days}, общее время - {daylight_hours}")
 print("\nВсе записи успешно добавлены")
