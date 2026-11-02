@@ -21,7 +21,7 @@ def main():
 
     print("Управление пользователями (Доступные команды add, remove, list, exit)")
     while True:
-        command = input("\nВведите команду : ").strip().lower()
+        command = input("\nВведите команду (add, remove, list, exit) : ").strip().lower()
         if command == "add":
             name = input("Введите имя пользователя : ").strip()
             if not name:
