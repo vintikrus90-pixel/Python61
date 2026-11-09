@@ -1,7 +1,7 @@
 # Домашнее задание 7
 # main.py
 # Основная программа: командный интерфейс для управления пользователями
-from user_manager import add_user, remove_user, list_users
+from DZlesson7.user_manager import add_user, remove_user, list_users
 
 def get_age():
 
